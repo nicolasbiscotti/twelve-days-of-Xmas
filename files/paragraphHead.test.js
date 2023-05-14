@@ -12,4 +12,7 @@ describe('Get the heading of the nth paragraph', () => {
   it('should return twelfth day for paragraph twelfth', () => {
     expect(paragraphHead(12)).toEqual('On the twelfth day of Christmas');
   });
+  it('should throw an exception if no argument has been passed', () => {
+    expect(paragraphHead).toThrow('You must provide a paragraph number.');
+  });
 });
