@@ -6,7 +6,7 @@ function paragraphHead(paragraph) {
   if (paragraph === 1) {
     ordinalNumber = "first";
   }
-  lineHead.replace("ordinal", ordinalNumber);
+  lineHead = lineHead.replace("ordinal", ordinalNumber);
   return lineHead;
 }
 
