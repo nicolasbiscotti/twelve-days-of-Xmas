@@ -27,5 +27,21 @@
       3,
       357001
     ]
+  },
+  {
+    "duration": 4.111713,
+    "colour": "red",
+    "predicted": "green",
+    "revert_if_wrong": "off",
+    "index": 2,
+    "time": [
+      2023,
+      5,
+      14,
+      12,
+      13,
+      14,
+      757038
+    ]
   }
 ]
