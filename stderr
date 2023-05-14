@@ -1,41 +1,12 @@
-FAIL ./paragraphHead.test.js
+PASS ./paragraphHead.test.js
   Get the heading of the nth paragraph
     ✓ should return first day for paragraph one (2 ms)
     ✓ should return second day for paragraph two (1 ms)
     ✓ should return twelfth day for paragraph twelfth
-    ✕ should throw an exception if no argument has been passed (14 ms)
+    ✓ should throw an exception if no argument has been passed (2 ms)
 
-  ● Get the heading of the nth paragraph › should throw an exception if no argument has been passed
-
-    expect(received).toThrow(expected)
-
-    Expected substring: "You must provide a paragraph number."
-    Received message:   "Exception is not defined"
-
-           8 | function paragraphHead(paragraph) {
-           9 |   if (paragraph === undefined) {
-        > 10 |     throw new Exception('You must provide a paragraph number.');
-             |     ^
-          11 |   }
-          12 |   let lineHead = "On the ordinal day of Christmas";
-          13 |   lineHead = lineHead.replace("ordinal", ordinalNumbers[paragraph - 1]);
-
-      at paragraphHead (paragraphHead.js:10:5)
-      at Object.<anonymous> (paragraphHead.test.js:16:27)
-      at Object.<anonymous> (paragraphHead.test.js:16:27)
-
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 3 passed, 4 total
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        1.352 s
+Time:        1.382 s
 Ran all test suites.
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! @ test: `jest --coverage`
-npm ERR! Exit status 1
-npm ERR! 
-npm ERR! Failed at the @ test script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2023-05-14T12_54_07_934Z-debug.log
