@@ -9,4 +9,7 @@ describe('Get the heading of the nth paragraph', () => {
   it('should return second day for paragraph two', () => {
     expect(paragraphHead(2)).toEqual('On the second day of Christmas');
   });
+  it('should return twelfth day for paragraph twelfth', () => {
+    expect(paragraphHead(12)).toEqual('On the twelfth day of Christmas');
+  });
 });

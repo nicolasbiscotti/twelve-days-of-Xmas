@@ -1,10 +1,11 @@
 PASS ./paragraphHead.test.js
   Get the heading of the nth paragraph
-    ✓ should return first day for paragraph one (3 ms)
+    ✓ should return first day for paragraph one (2 ms)
     ✓ should return second day for paragraph two
+    ✓ should return twelfth day for paragraph twelfth
 
 Test Suites: 1 passed, 1 total
-Tests:       2 passed, 2 total
+Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        1.388 s
+Time:        1.393 s
 Ran all test suites.
