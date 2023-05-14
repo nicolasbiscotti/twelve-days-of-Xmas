@@ -1,14 +1,13 @@
 'use strict';
 
+const ordinalNumbers = [
+  "first", "second", "third", "fourth", "fifth", "sixth",
+  "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"
+];
+
 function paragraphHead(paragraph) {
-  let ordinalNumber = "";
   let lineHead = "On the ordinal day of Christmas";
-  if (paragraph === 1) {
-    ordinalNumber = "first";
-  } else if (paragraph === 2) {
-    ordinalNumber = "second";
-  }
-  lineHead = lineHead.replace("ordinal", ordinalNumber);
+  lineHead = lineHead.replace("ordinal", ordinalNumbers[paragraph - 1]);
   return lineHead;
 }
 
