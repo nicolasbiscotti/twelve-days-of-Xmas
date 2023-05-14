@@ -6,6 +6,9 @@ const ordinalNumbers = [
 ];
 
 function paragraphHead(paragraph) {
+  if (paragraph === undefined) {
+    throw new Exception('You must provide a paragraph number.');
+  }
   let lineHead = "On the ordinal day of Christmas";
   lineHead = lineHead.replace("ordinal", ordinalNumbers[paragraph - 1]);
   return lineHead;
