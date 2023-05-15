@@ -3,32 +3,35 @@ FAIL ./paragraphHead.test.js
     ✓ should return first day for paragraph one (3 ms)
     ✓ should return second day for paragraph two (1 ms)
     ✓ should return twelfth day for paragraph twelfth
-    ✓ should throw an exception if no argument has been passed (4 ms)
+    ✓ should throw an exception if no argument has been passed (3 ms)
     ✓ should throw an exception if paragraph number is greater than twelve (1 ms)
-    ✕ should throw an exception if paragraph number is less than one (2 ms)
+    ✕ should throw an exception if paragraph number is less than one (12 ms)
 
   ● Get the heading of the nth paragraph › should throw an exception if paragraph number is less than one
 
     expect(received).toThrow(expected)
 
     Expected substring: "The paragraph number can't be lees than one."
+    Received message:   "The paragraph number can't be less than one."
 
-    Received function did not throw
+          14 |   }
+          15 |   if ( paragraph < 1 ) {
+        > 16 |     throw new Error("The paragraph number can't be less than one.");
+             |           ^
+          17 |   }
+          18 | }
+          19 |
 
-      20 |   });
-      21 |   it('should throw an exception if paragraph number is less than one', () => {
-    > 22 |     expect(() => paragraphHead(0)).toThrow("The paragraph number can't be lees than one.");
-         |                                    ^
-      23 |   });
-      24 | });
-      25 | 
-
+      at validateParagraph (paragraphHead.js:16:11)
+      at paragraphHead (paragraphHead.js:21:3)
+      at paragraphHead.test.js:22:18
+      at Object.<anonymous> (paragraphHead.test.js:22:36)
       at Object.<anonymous> (paragraphHead.test.js:22:36)
 
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 5 passed, 6 total
 Snapshots:   0 total
-Time:        1.424 s
+Time:        1.482 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -39,4 +42,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2023-05-15T17_26_15_246Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2023-05-15T17_28_37_958Z-debug.log

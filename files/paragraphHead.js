@@ -12,6 +12,9 @@ function validateParagraph(paragraph) {
   if ( paragraph > 12 ) {
     throw new Error("The paragraph number can't be greater than twelve.");
   }
+  if ( paragraph < 1 ) {
+    throw new Error("The paragraph number can't be less than one.");
+  }
 }
 
 function paragraphHead(paragraph) {
