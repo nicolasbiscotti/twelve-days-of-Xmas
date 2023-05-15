@@ -16,6 +16,6 @@ describe('Get the heading of the nth paragraph', () => {
     expect(paragraphHead).toThrow('You must provide a paragraph number.');
   });
   it('should throw an exception if paragraph number is greater than twelve', () => {
-    expect(() => paragraphHead(13)).toThrow('You must provide a paragraph number between one and twelve.');
+    expect(() => paragraphHead(13)).toThrow("The paragraph number can't be greater than twelve.");
   });
 });
