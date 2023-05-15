@@ -1,8 +1,8 @@
 PASS ./paragraphHead.test.js
   Get the heading of the nth paragraph
     ✓ should return first day for paragraph one (3 ms)
-    ✓ should return second day for paragraph two (1 ms)
-    ✓ should return twelfth day for paragraph twelfth
+    ✓ should return second day for paragraph two
+    ✓ should return twelfth day for paragraph twelfth (1 ms)
     ✓ should throw an exception if no argument has been passed (3 ms)
     ✓ should throw an exception if paragraph number is greater than twelve (1 ms)
     ✓ should throw an exception if paragraph number is less than one (1 ms)
@@ -10,5 +10,5 @@ PASS ./paragraphHead.test.js
 Test Suites: 1 passed, 1 total
 Tests:       6 passed, 6 total
 Snapshots:   0 total
-Time:        1.402 s
+Time:        1.479 s
 Ran all test suites.
