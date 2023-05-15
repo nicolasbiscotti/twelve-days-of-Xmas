@@ -5,13 +5,17 @@ const ordinalNumbers = [
   "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"
 ];
 
-function paragraphHead(paragraph) {
+function validateParagraph(paragraph) {
   if ( paragraph === undefined ) {
     throw new Error('You must provide a paragraph number.');
   }
   if ( paragraph > 12 ) {
     throw new Error("The paragraph number can't be greater than twelve.");
   }
+}
+
+function paragraphHead(paragraph) {
+  validateParagraph(paragraph);
   let lineHead = "On the ordinal day of Christmas";
   lineHead = lineHead.replace("ordinal", ordinalNumbers[paragraph - 1]);
   return lineHead;
