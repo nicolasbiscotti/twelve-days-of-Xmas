@@ -7,10 +7,10 @@ function giftDescription(paragraphNumber, giftNumber) {
 }
 
 function chaeckParagraphNumberRange(paragraphNumber) {
-  if (paragraph < 1) {
+  if (paragraphNumber < 1) {
     throw new Error("Paragraph number must be greater than or equal to one");
   }
-  if (paragraph > 12) {
+  if (paragraphNumber > 12) {
     throw new Error("Paragraph number must be less than or equal to twelve");
   }
 }
