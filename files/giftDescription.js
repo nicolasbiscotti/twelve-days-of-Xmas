@@ -8,7 +8,9 @@ function giftDescription(paragraphNumber, giftNumber) {
 
   if (giftNumber === 2) {
     giftDescription = "Two turtle doves and";
-  } 
+  } else if (giftNumber === 3) {
+    giftDescription = "Three french hens";
+  }
 
   return giftDescription;
 }
