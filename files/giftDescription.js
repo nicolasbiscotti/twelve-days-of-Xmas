@@ -1,6 +1,9 @@
 "use strict";
 
 function giftDescription(paragraph, giftNumber) {
+  if (paragraph < 1) {
+    throw new Error("Paragraph number must be greater than or equal to one");
+  }
   checkGiftNumberRange(giftNumber);
   return "A partridge in a pear tree.";
 }
