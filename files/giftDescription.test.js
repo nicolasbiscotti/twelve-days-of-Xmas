@@ -45,5 +45,7 @@ describe("Get the description given the paragraph number and the gift number", (
   it("should return the second Gift description", () => {
     expect(giftDescription(12, 2)).toEqual("Two turtle doves and");
   });
-  
+  it("should return the third Gift description", () => {
+    expect(giftDescription(3, 3)).toEqual("Three french hens");
+  });
 });
