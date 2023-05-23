@@ -11,4 +11,9 @@ describe("Get the description given the paragraph number and the gift number", (
       "Gift number must be greater than or equals one"
     );
   });
+  it("should throw gift number must be less or equal to twelve", () => {
+    expect(() => giftDescription(1, 13)).toThrow(
+      "Gift number must be less than or equal to twelve"
+    );
+  });
 });
