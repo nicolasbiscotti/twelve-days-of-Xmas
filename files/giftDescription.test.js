@@ -16,4 +16,7 @@ describe("Get the description given the paragraph number and the gift number", (
       "Gift number must be less than or equal to twelve"
     );
   });
+  it("should return the first Gift", () => {
+    expect(giftDescription(1, 12)).toEqual("A partridge in a pear tree.");
+  });
 });
