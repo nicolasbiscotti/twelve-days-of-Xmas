@@ -5,7 +5,7 @@ function giftDescription(paragraph, giftNumber) {
     throw new Error("Paragraph number must be greater than or equal to one");
   }
   if (paragraph > 12) {
-    throw new Error("Paragraph number must be greater than or equal to twelve");
+    throw new Error("Paragraph number must be less than or equal to twelve");
   }
   checkGiftNumberRange(giftNumber);
   return "A partridge in a pear tree.";
