@@ -1,14 +1,18 @@
 "use strict";
 
-function giftDescription(paragraph, giftNumber) {
+function giftDescription(paragraphNumber, giftNumber) {
+  chaeckParagraphNumberRange(paragraphNumber);
+  checkGiftNumberRange(giftNumber);
+  return "A partridge in a pear tree.";
+}
+
+function chaeckParagraphNumberRange(paragraphNumber) {
   if (paragraph < 1) {
     throw new Error("Paragraph number must be greater than or equal to one");
   }
   if (paragraph > 12) {
     throw new Error("Paragraph number must be less than or equal to twelve");
   }
-  checkGiftNumberRange(giftNumber);
-  return "A partridge in a pear tree.";
 }
 
 function checkGiftNumberRange(giftNumber) {
