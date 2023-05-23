@@ -9,7 +9,6 @@ const giftDescriptionList = [
 function giftDescription(paragraphNumber, giftNumber) {
   chaeckParagraphNumberRange(paragraphNumber);
   checkGiftNumberRange(paragraphNumber, giftNumber);
-
   return giftDescriptionList[giftNumber - 1];
 }
 

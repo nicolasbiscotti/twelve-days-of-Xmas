@@ -1,8 +1,18 @@
-'use strict';
+"use strict";
 
 const ordinalNumbers = [
-  "first", "second", "third", "fourth", "fifth", "sixth",
-  "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"
+  "first",
+  "second",
+  "third",
+  "fourth",
+  "fifth",
+  "sixth",
+  "seventh",
+  "eighth",
+  "ninth",
+  "tenth",
+  "eleventh",
+  "twelfth",
 ];
 
 const paragraphValidations = [
@@ -20,11 +30,11 @@ const paragraphValidations = [
     if (paragraph < 1) {
       throw new Error("The paragraph number can't be less than one.");
     }
-  }
+  },
 ];
 
 function paragraphHead(paragraph) {
-  paragraphValidations.forEach( validation => validation(paragraph) );
+  paragraphValidations.forEach((validation) => validation(paragraph));
   let lineHead = "On the ordinal day of Christmas";
   lineHead = lineHead.replace("ordinal", ordinalNumbers[paragraph - 1]);
   return lineHead;
