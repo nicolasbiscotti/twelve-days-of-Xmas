@@ -1,18 +1,16 @@
 "use strict";
 
-function giftDescription(paragraphNumber, giftNumber) {
-  let giftDescription = "A partridge in a pear tree.";
+const giftDescriptionList = [
+  "A partridge in a pear tree.",
+  "Two turtle doves and",
+  "Three french hens",
+];
 
+function giftDescription(paragraphNumber, giftNumber) {
   chaeckParagraphNumberRange(paragraphNumber);
   checkGiftNumberRange(paragraphNumber, giftNumber);
 
-  if (giftNumber === 2) {
-    giftDescription = "Two turtle doves and";
-  } else if (giftNumber === 3) {
-    giftDescription = "Three french hens";
-  }
-
-  return giftDescription;
+  return giftDescriptionList[giftNumber - 1];
 }
 
 function chaeckParagraphNumberRange(paragraphNumber) {
