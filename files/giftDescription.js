@@ -3,9 +3,6 @@
 function giftDescription(paragraphNumber, giftNumber) {
   chaeckParagraphNumberRange(paragraphNumber);
   checkGiftNumberRange(giftNumber);
-  if (giftNumber > paragraphNumber) {
-    throw new Error("Gift number cannot be greater than the Paragraph number");
-  }
   return "A partridge in a pear tree.";
 }
 
@@ -24,6 +21,9 @@ function checkGiftNumberRange(giftNumber) {
   }
   if (giftNumber > 12) {
     throw new Error("Gift number must be less than or equal to twelve");
+  }
+  if (giftNumber > paragraphNumber) {
+    throw new Error("Gift number cannot be greater than the Paragraph number");
   }
 }
 
