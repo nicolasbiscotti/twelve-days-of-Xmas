@@ -17,6 +17,6 @@ describe("Get the description given the paragraph number and the gift number", (
     );
   });
   it("should return the first Gift", () => {
-    expect(giftDescription(1, 12)).toEqual("A partridge in a pear tree.");
+    expect(giftDescription(12, 1)).toEqual("A partridge in a pear tree.");
   });
 });
