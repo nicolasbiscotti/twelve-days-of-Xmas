@@ -1,11 +1,11 @@
 "use strict";
 
 function giftDescription(paragraphNumber, giftNumber) {
+  chaeckParagraphNumberRange(paragraphNumber);
+  checkGiftNumberRange(giftNumber);
   if (giftNumber > paragraphNumber) {
     throw new Error("Gift number cannot be greater than the Paragraph number");
   }
-  chaeckParagraphNumberRange(paragraphNumber);
-  checkGiftNumberRange(giftNumber);
   return "A partridge in a pear tree.";
 }
 
