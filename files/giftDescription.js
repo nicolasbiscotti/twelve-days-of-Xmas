@@ -1,9 +1,16 @@
 "use strict";
 
 function giftDescription(paragraphNumber, giftNumber) {
+  let giftDescription = "A partridge in a pear tree.";
+
   chaeckParagraphNumberRange(paragraphNumber);
   checkGiftNumberRange(paragraphNumber, giftNumber);
-  return "A partridge in a pear tree.";
+
+  if (giftNumber === 2) {
+    giftDescription = "Two turtle doves and";
+  }
+
+  return giftDescription;
 }
 
 function chaeckParagraphNumberRange(paragraphNumber) {
