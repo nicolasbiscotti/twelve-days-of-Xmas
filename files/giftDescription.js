@@ -2,7 +2,7 @@
 
 function giftDescription(paragraphNumber, giftNumber) {
   chaeckParagraphNumberRange(paragraphNumber);
-  checkGiftNumberRange(giftNumber);
+  checkGiftNumberRange(paragraphNumber, giftNumber);
   return "A partridge in a pear tree.";
 }
 
@@ -15,7 +15,7 @@ function chaeckParagraphNumberRange(paragraphNumber) {
   }
 }
 
-function checkGiftNumberRange(giftNumber) {
+function checkGiftNumberRange(paragraphNumber, giftNumber) {
   if (giftNumber < 1) {
     throw new Error("Gift number must be greater than or equal to one");
   }
