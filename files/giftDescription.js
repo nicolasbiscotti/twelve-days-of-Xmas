@@ -7,7 +7,7 @@ function giftDescription(paragraph, giftNumber) {
 
 function checkGiftNumberRange(giftNumber) {
   if (giftNumber < 1) {
-    throw new Error("Gift number must be greater than or equals one");
+    throw new Error("Gift number must be greater than or equal to one");
   }
   if (giftNumber > 12) {
     throw new Error("Gift number must be less than or equal to twelve");
