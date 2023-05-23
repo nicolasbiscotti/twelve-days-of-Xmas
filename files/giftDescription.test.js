@@ -34,10 +34,16 @@ describe("Get the description given the paragraph number and the gift number", (
       "Gift number cannot be greater than the Paragraph number"
     );
   });
+  it("should throw for Gift number greater than the Paragraph number", () => {
+    expect(() => giftDescription(11, 12)).toThrow(
+      "Gift number cannot be greater than the Paragraph number"
+    );
+  });
   it("should return the second Gift description", () => {
     expect(giftDescription(2, 2)).toEqual("Two turtle doves and");
   });
   it("should return the second Gift description", () => {
     expect(giftDescription(12, 2)).toEqual("Two turtle doves and");
   });
+  
 });
