@@ -1,4 +1,4 @@
-function versesUpṬo(upTo, verseIntro, giftDescription) {
+function versesUpTo(upTo, verseIntro, giftDescription) {
   let lyrics = "";
   const range = [...Array(upTo).keys()].map((number) => number + 1);
 
@@ -25,4 +25,4 @@ function addVerseTo(lyrics, verse) {
   return lyrics;
 }
 
-module.exports = versesUpṬo;
+module.exports = versesUpTo;
