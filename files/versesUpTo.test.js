@@ -5,7 +5,7 @@ const versesUpṬo = require("./versesUpTo");
 describe("Get the first nth verses of the lyrics", () => {
   it("should return only the firsty verse", () => {
     function verseIntro(verseNumber) {
-      return `Intro ${verseNumber}\n`;
+      return `Intro ${verseNumber}`;
     }
     function giftDescription(giftNumber) {
       return `Gift ${giftNumber}`;
