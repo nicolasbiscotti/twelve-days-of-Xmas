@@ -35,9 +35,9 @@ const verseValidations = [
 
 function verseIntro(verseNumber) {
   verseValidations.forEach((validation) => validation(verseNumber));
-  let lineHead = "On the ordinal day of Christmas";
-  lineHead = lineHead.replace("ordinal", ordinalNumbers[verseNumber - 1]);
-  return lineHead;
+  let introduction = "On the ordinal day of Christmas\nMy true love gave to me:";
+  introduction = introduction.replace("ordinal", ordinalNumbers[verseNumber - 1]);
+  return introduction;
 }
 
 module.exports = verseIntro;
