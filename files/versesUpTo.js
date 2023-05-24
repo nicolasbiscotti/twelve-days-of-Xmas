@@ -5,11 +5,15 @@ function versesUpṬo(upTo, verseIntro, giftDescription) {
   let giftList = "";
   for (const verseNumber of range) {
     let introduction = verseIntro(verseNumber) + "\n";
-    giftList = giftDescription(verseNumber) + "\n" + giftList;
+    giftList = addGiftTo(giftList, verseNumber, giftDescription);
     lyrics = addVerseTo(lyrics, introduction + giftList);
   }
 
   return lyrics;
+}
+
+function addGiftTo(giftList, verseNumber, giftDescription) {
+  return giftDescription(verseNumber) + "\n" + giftList;
 }
 
 function addVerseTo(lyrics, verse) {
