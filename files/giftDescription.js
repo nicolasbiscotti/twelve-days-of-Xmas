@@ -5,6 +5,14 @@ const giftDescriptionList = [
   "Two turtle doves and",
   "Three french hens",
   "Four calling birds",
+  "Five golden rings",
+  "Six geese a-laying",
+  "Seven swans a-swimming",
+  "Eight maids a-milking",
+  "Nine ladies dancing",
+  "Ten lords a-leaping",
+  "Eleven pipers piping",
+  "Twelve drummers drumming",
 ];
 
 function giftDescription(paragraphNumber, giftNumber) {
