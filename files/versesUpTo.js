@@ -17,7 +17,7 @@ function addVerseTo(lyrics, verse) {
   if (lyrics === "") {
     newLyrics = verse;
   } else {
-    lyrics += "\n" + verse;
+    newLyrics = lyrics + "\n" + verse;
   }
   return newLyrics;
 }
