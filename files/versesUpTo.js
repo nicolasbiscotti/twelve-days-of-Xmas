@@ -13,13 +13,12 @@ function versesUpṬo(upTo, verseIntro, giftDescription) {
 }
 
 function addVerseTo(lyrics, verse) {
-  let newLyrics;
   if (lyrics === "") {
-    newLyrics = verse;
+    lyrics = verse;
   } else {
-    newLyrics = lyrics + "\n" + verse;
+    lyrics += "\n" + verse;
   }
-  return newLyrics;
+  return lyrics;
 }
 
 module.exports = versesUpṬo;
