@@ -35,7 +35,7 @@ const verseValidations = [
 
 function verseIntro(verseNumber) {
   verseValidations.forEach((validation) => validation(verseNumber));
-  let introduction = "On the ordinal day of Christmas\nMy true love gave to me:";
+  let introduction = "On the ordinal day of Christmas,\nMy true love gave to me:";
   introduction = introduction.replace("ordinal", ordinalNumbers[verseNumber - 1]);
   return introduction;
 }
