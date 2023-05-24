@@ -7,12 +7,12 @@ const giftDescriptionList = [
 ];
 
 function giftDescription(paragraphNumber, giftNumber) {
-  chaeckParagraphNumberRange(paragraphNumber);
+  checkParagraphNumberRange(paragraphNumber);
   checkGiftNumberRange(paragraphNumber, giftNumber);
   return giftDescriptionList[giftNumber - 1];
 }
 
-function chaeckParagraphNumberRange(paragraphNumber) {
+function checkParagraphNumberRange(paragraphNumber) {
   if (paragraphNumber < 1) {
     throw new Error("Paragraph number must be greater than or equal to one");
   }
