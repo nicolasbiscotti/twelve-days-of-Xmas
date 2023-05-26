@@ -30,7 +30,7 @@ const verseValidations = [
   },
   (verseNumber) => {
     if (verseNumber < 1) {
-      throw new Error("The verse number can't be less than one.");
+      throw new OutOfRange("The verse number can't be less than one.");
     }
   },
 ];
