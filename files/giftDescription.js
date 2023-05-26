@@ -1,5 +1,7 @@
 "use strict";
 
+const { InvalidArgument } = require("./customErrors");
+
 const giftDescriptionList = [
   "A partridge in a pear tree.",
   "Two turtle doves and",
@@ -22,7 +24,9 @@ function giftDescription(verseNumber) {
 
 function checkVerseNumberRange(verseNumber) {
   if (verseNumber < 1) {
-    throw new Error("Verse number must be greater than or equal to one");
+    throw new InvalidArgument(
+      "Verse number must be greater than or equal to one"
+    );
   }
   if (verseNumber > 12) {
     throw new Error("Verse number must be less than or equal to twelve");
