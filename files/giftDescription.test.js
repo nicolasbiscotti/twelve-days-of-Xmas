@@ -11,6 +11,7 @@ describe("Get the gift description given the verse number", () => {
     );
   });
   it("should throw for Verse number greater than twelve", () => {
+    expect(() => giftDescription(13)).toThrow(InvalidArgument);
     expect(() => giftDescription(13)).toThrow(
       "Verse number must be less than or equal to twelve"
     );
