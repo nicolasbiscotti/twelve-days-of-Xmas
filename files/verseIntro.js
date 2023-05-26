@@ -35,9 +35,27 @@ const verseValidations = [
 
 function verseIntro(verseNumber) {
   verseValidations.forEach((validation) => validation(verseNumber));
-  let introduction = "On the ordinal day of Christmas,\nMy true love gave to me:";
-  introduction = introduction.replace("ordinal", ordinalNumbers[verseNumber - 1]);
+  let introduction =
+    "On the ordinal day of Christmas,\nMy true love gave to me:";
+  introduction = introduction.replace(
+    "ordinal",
+    ordinalNumbers[verseNumber - 1]
+  );
   return introduction;
+}
+
+class MissingArgument extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MissingArgument";
+  }
+}
+
+class OutOfRange extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "OutOfRange";
+  }
 }
 
 module.exports = verseIntro;

@@ -12,8 +12,8 @@ describe("Get the introduction of the nth verse", () => {
   it("should return twelfth day for verse twelfth", () => {
     expect(verseIntro(12)).toEqual("On the twelfth day of Christmas,\nMy true love gave to me:");
   });
-  it("should throw an exception if no argument has been passed", () => {
-    expect(verseIntro).toThrow("You must provide a verse number.");
+  it("should throw a MissingArgument exception if no argument has been passed", () => {
+    expect(verseIntro).toThrow(MissingArgument);
   });
   it("should throw an exception if verse number is greater than twelve", () => {
     expect(() => verseIntro(13)).toThrow(
