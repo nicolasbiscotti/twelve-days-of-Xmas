@@ -23,8 +23,11 @@ describe("Get the introduction of the nth verse", () => {
     expect(verseIntro).toThrow(MissingArgument);
     expect(verseIntro).toThrow("You must provide a verse number.");
   });
-  it("should throw an exception if verse number is greater than twelve", () => {
-    expect(() => verseIntro(13)).toThrow(
+  it("should throw a OutOfRange exception if verse number is greater than twelve", () => {
+    function verseNumberOutOfRange() {
+      verseIntro(13);
+    }
+    expect(verseNumberOutOfRange).toThrow(
       "The verse number can't be greater than twelve."
     );
   });
