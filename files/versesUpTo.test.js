@@ -24,7 +24,7 @@ describe("Get the first nth verses of the lyrics", () => {
     );
   });
 
-  it("should return the complete lyrics of 12-days-of-Xmas", () => {
+  xit("should return the complete lyrics of 12-days-of-Xmas", () => {
     console.log(versesUpTo(12, realVerseIntro, realGiftDescription));
   });
 });

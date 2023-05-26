@@ -1,6 +1,6 @@
 "use strict";
 
-const { MissingArgument } = require("./customErrors");
+const { MissingArgument, OutOfRange } = require("./customErrors");
 
 const ordinalNumbers = [
   "first",
@@ -25,7 +25,7 @@ const verseValidations = [
   },
   (verseNumber) => {
     if (verseNumber > 12) {
-      throw new Error("The verse number can't be greater than twelve.");
+      throw new OutOfRange("The verse number can't be greater than twelve.");
     }
   },
   (verseNumber) => {
