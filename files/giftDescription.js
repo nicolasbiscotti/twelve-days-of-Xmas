@@ -29,7 +29,7 @@ function checkVerseNumberRange(verseNumber) {
     );
   }
   if (verseNumber > 12) {
-    throw new InvalidArgument("Verse number must be less than or equal to twelv");
+    throw new InvalidArgument("Verse number must be less than or equal to twelve");
   }
 }
 
