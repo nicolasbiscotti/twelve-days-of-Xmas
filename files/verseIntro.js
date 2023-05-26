@@ -1,5 +1,7 @@
 "use strict";
 
+const { MissingArgument } = require("./customErrors");
+
 const ordinalNumbers = [
   "first",
   "second",
@@ -18,7 +20,7 @@ const ordinalNumbers = [
 const verseValidations = [
   (verseNumber) => {
     if (verseNumber === undefined) {
-      throw new Error("You must provide a verse number.");
+      throw new MissingArgument("You must provide a verse number.");
     }
   },
   (verseNumber) => {
