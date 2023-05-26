@@ -1,5 +1,6 @@
 "use strict";
 
+const { MissingArgument } = require("./customErrors");
 const verseIntro = require("./verseIntro");
 
 describe("Get the introduction of the nth verse", () => {
