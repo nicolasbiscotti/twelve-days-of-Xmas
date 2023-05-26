@@ -32,7 +32,8 @@ describe("Get the introduction of the nth verse", () => {
       "The verse number can't be greater than twelve."
     );
   });
-  it("should throw an exception if verse number is less than one", () => {
+  it("should throw an OutOfRange exception if verse number is less than one", () => {
+    expect(() => verseIntro(0)).toThrow(OutOfRange);
     expect(() => verseIntro(0)).toThrow(
       "The verse number can't be less than one."
     );
