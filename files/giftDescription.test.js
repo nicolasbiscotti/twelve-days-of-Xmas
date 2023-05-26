@@ -1,9 +1,11 @@
 "use strict";
 
+const { InvalidArgument } = require("./customErrors");
 const giftDescription = require("./giftDescription");
 
 describe("Get the gift description given the verse number", () => {
-  it("should throw for verse number less than one", () => {
+  it("should throw InvalidArgument for verse number less than one", () => {
+    expect(() => giftDescription(0)).toThrow(InvalidArgument);
     expect(() => giftDescription(0)).toThrow(
       "Verse number must be greater than or equal to one"
     );

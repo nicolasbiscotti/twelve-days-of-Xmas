@@ -1,3 +1,10 @@
+class InvalidArgument extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "InvalidArgument";
+  }
+}
+
 class MissingArgument extends Error {
   constructor(message) {
     super(message);
@@ -13,6 +20,7 @@ class OutOfRange extends Error {
 }
 
 module.exports = {
+  InvalidArgument,
   MissingArgument,
   OutOfRange,
 };
