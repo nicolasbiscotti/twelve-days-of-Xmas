@@ -1,6 +1,5 @@
 "use strict";
 
-const { MissingArgument } = require("./customErrors");
 const verseIntro = require("./verseIntro");
 
 describe("Get the introduction of the nth verse", () => {
@@ -15,6 +14,7 @@ describe("Get the introduction of the nth verse", () => {
   });
   it("should throw a MissingArgument exception if no argument has been passed", () => {
     expect(verseIntro).toThrow(MissingArgument);
+    expect(verseIntro).toThrow("You must provide a verse number.");
   });
   it("should throw an exception if verse number is greater than twelve", () => {
     expect(() => verseIntro(13)).toThrow(
